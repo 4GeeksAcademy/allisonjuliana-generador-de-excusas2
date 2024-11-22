@@ -1,1 +1,20 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
+
+body {
+  background-color: rgb(63, 56, 55);
+}
+
+.generador {
+  margin-top: 200px;
+  text-align: center;
+  color: rgb(15, 15, 18);
+  font-size: 40px;
+}
+
+#result {
+  margin-top: 100px;
+  text-align: center;
+  color: blue;
+  font-size: 40px;
+  font-family: cursive;
+}
