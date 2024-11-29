@@ -18,20 +18,22 @@ window.onload = function() {
     "el viernes"
   ];
 
-  let personaIndex = Math.floor(Math.random() * persona.length);
-  let accionIndex = Math.floor(Math.random() * accion.length);
-  let dondeIndex = Math.floor(Math.random() * donde.length);
-  let cuandoIndex = Math.floor(Math.random() * cuando.length);
+  function createAleatoryElement(array) {
+    return Math.floor(Math.random() * array.length);
+  }
+
+  let personaIndex = createAleatoryElement(persona);
+  let accionIndex = createAleatoryElement(accion);
+  let dondeIndex = createAleatoryElement(donde);
+  let cuandoIndex = createAleatoryElement(cuando);
 
   document.getElementById("result").innerHTML =
-    "<div><h2>" +
     persona[personaIndex] +
     " " +
     accion[accionIndex] +
     " " +
     donde[dondeIndex] +
     " " +
-    cuando[cuandoIndex] +
-    "</h2></div>";
+    cuando[cuandoIndex];
 };
 console.log("Hello Rigo from the console!");
